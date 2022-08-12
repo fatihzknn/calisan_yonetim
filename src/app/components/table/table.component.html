@@ -1,0 +1,52 @@
+<div>
+  <button class="btn btn-sm btn-success" (click)="openDialog()"  >
+    <i class="fa fa-remove" ></i>Ekle</button>
+</div>
+<table class="table">
+  
+    <thead class="table-dark">
+      <tr class="border border-dark p-2 mb-2">
+        <th scope="col">Sicil No</th>
+        <th scope="col">Ad Soyad</th>
+        <th scope="col">Birim</th>
+        <th scope="col">Alt Birim</th>
+        <th scope="col">Ünvan</th>
+        <th scope="col">Beden</th>
+        <th scope="col">Ayak Numarası</th>
+        <th scope="col">Kan Grubu</th>
+        <th scope="col">Cinsiyet</th>
+        <th scope="col">İlk Yardım</th>
+        
+        <!-- <th scope="col"></th>
+        <th scope="col"></th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of employeeArray" class="border border-dark p-2 mb-2">
+        <td>{{item.sicil_no}}</td>
+        <td>{{ item.ad_soyad }}</td>
+        <td>{{ item.birim }}</td>
+        <td>{{ item.alt_birim }}</td>       
+        <td>{{ item.unvan }}</td>
+        <td>{{ item.beden }}</td>
+        <td>{{ item.ayak_no }}</td>
+        <td>{{ item.kan_grubu }}</td>
+        <td>{{ item.cinsiyet }}</td>
+        <td>{{ item.ilk_yardim }}</td>
+        
+        <!-- <td>
+          <button class="btn btn-sm btn-danger" (click)="deleteTable(item.sicil_no)" (click)="refresh()">
+            <i class="fa fa-remove"></i>Sil</button>
+        </td>
+        <td class="d-flex">
+          <button class="btn btn-sm btn-success" (click)="openDialog2(item)"  >
+            <i class="fa fa-remove" ></i>Güncelle</button>
+         
+          
+        </td> -->
+      </tr>
+      </tbody>
+  </table>
+
+
+  
